@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HomeBottomTabLayout">
+        <attr name="container_id" format="reference" />
+        <attr name="viewPager_id" format="reference" />
+        <attr name="config_file_name" format="string" />
+    </declare-styleable>
+</resources>

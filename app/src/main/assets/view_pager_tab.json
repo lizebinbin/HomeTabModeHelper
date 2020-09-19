@@ -1,0 +1,41 @@
+{
+  "textColorNormal": "#A4A3A3",
+  "textColorSelected": "#C02221",
+  "textSizeNormal": 14,
+  "textSizeSelected": 14,
+  "backgroundColor": "#e9e9e9",
+  "isNameResId": false,
+  "isTitleVisible": true,
+  "tabs": [
+    {
+      "tabName": "首页",
+      "tabTag": "key_index_fragment",
+      "iconNormal": "main_home_tab_index_normal",
+      "iconSelected": "main_home_tab_index_selected"
+    },
+    {
+      "tabName": "记录",
+      "tabTag": "key_name_fragment",
+      "iconNormal": "main_home_tab_tools_normal",
+      "iconSelected": "main_home_tab_tools_selected"
+    },
+    {
+      "tabName": "发现",
+      "tabTag": "key_discover_fragment",
+      "iconNormal": "main_home_tab_discovery_normal",
+      "iconSelected": "main_home_tab_discovery_selected"
+    },
+    {
+      "tabName": "收藏",
+      "tabTag": "key_collect_fragment",
+      "iconNormal": "main_home_tab_collect_normal",
+      "iconSelected": "main_home_tab_collect_selected"
+    },
+    {
+      "tabName": "我的",
+      "tabTag": "key_user_fragment",
+      "iconNormal": "main_home_tab_mine_normal",
+      "iconSelected": "main_home_tab_mine_selected"
+    }
+  ]
+}
