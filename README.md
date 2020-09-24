@@ -2,7 +2,7 @@
 在如今各种App模式如出一辙、各个程序员们却各式各样花式实现效果的环境下，每接手一个项目，就能看到项目代码又不一样，分分钟想统一。同时为了加速后续新应用的开发，封装搭建了这么一个初步的简易框架，实现两分钟快速无脑构建首页。
 
 话不多说，先看实现的效果：
-![5h78t-j9qb8.gif](https://upload-images.jianshu.io/upload_images/3650692-110433c32c62304f.gif?imageMogr2/auto-orient/strip)
+![效果展示](img/sample.gif)
 
 ## 简介
 实现功能：
