@@ -5,12 +5,12 @@ buildscript {
     repositories {
         google()
         jcenter()
-        maven {
-            url 'https://dl.bintray.com/novoda-oss/snapshots/'
-        }
-        maven {
-            url 'https://dl.bintray.com/moorelzb/maven/'
-        }
+//        maven {
+//            url 'https://dl.bintray.com/novoda-oss/snapshots/'
+//        }
+//        maven {
+//            url 'https://dl.bintray.com/moorelzb/maven/'
+//        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.0'
@@ -25,12 +25,12 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven {
-            url 'https://dl.bintray.com/novoda-oss/snapshots/'
-        }
-        maven {
-            url 'https://dl.bintray.com/moorelzb/maven/'
-        }
+//        maven {
+//            url 'https://dl.bintray.com/novoda-oss/snapshots/'
+//        }
+//        maven {
+//            url 'https://dl.bintray.com/moorelzb/maven/'
+//        }
 
     }
 }

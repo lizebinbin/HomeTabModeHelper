@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), HomeBottomTabLayout.HomeBottomTabLayoutCallback {
 
+    //每个tab对应的tag，和json配置文件中保持一致
     val TAG_INDEX = "key_index_fragment"
     val TAG_NAME = "key_name_fragment"
     val TAG_DISCOVERY = "key_discover_fragment"
@@ -17,16 +18,18 @@ class MainActivity : AppCompatActivity(), HomeBottomTabLayout.HomeBottomTabLayou
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        //设置回调
         main_tab_layout.setHomeBottomTabLayoutCallback(this)
+        //初始化，参数为默认展示第几个tab
         main_tab_layout.initFirstTab(2)
-
+        //如果需要展示未读消息，通过该方法展示
         main_tab_layout.setUnreadTip(TAG_USER, "12")
         main_tab_layout.setUnreadTip(TAG_INDEX, "99+")
         main_tab_layout.setUnreadTip(TAG_COLLECT, null, false)
     }
 
     override fun getFragmentByTag(tabTag: String): Fragment? {
+        //根据对应Tag名称，返回具体的Fragment对象
         when (tabTag) {
             TAG_INDEX -> return Fragment1()
             TAG_NAME -> return Fragment2()
@@ -38,8 +41,6 @@ class MainActivity : AppCompatActivity(), HomeBottomTabLayout.HomeBottomTabLayou
     }
 
     override fun onClickChangeTab(selectedIndex: Int, selectedTag: String?) {
-        selectedTag?.let {
-            main_tab_layout.hideUnReadTip(it)
-        }
+        //点击tab回调，可在此进行统计事件、隐藏消息提示等操作
     }
 }
