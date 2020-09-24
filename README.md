@@ -2,6 +2,7 @@
 在如今各种App模式如出一辙、各个程序员们却各式各样花式实现效果的环境下，每接手一个项目，就能看到项目代码又不一样，分分钟想统一。同时为了加速后续新应用的开发，封装搭建了这么一个初步的简易框架，实现两分钟快速无脑构建首页。
 
 话不多说，先看实现的效果：
+![5h78t-j9qb8.gif](https://upload-images.jianshu.io/upload_images/3650692-110433c32c62304f.gif?imageMogr2/auto-orient/strip)
 
 ## 简介
 实现功能：
@@ -52,7 +53,8 @@ implementation 'com.moore.lib:homeTabModeHelper:1.0.0'
   ]
 }
 ```
-这里解释一下各个配置的作用：
+这里解释一下各个配置的作用：  
+
 首先是tab文字描述的2个属性，2种状态`textColorNormal`，`textColorSelected`，`textSizeNormal`，`textSizeSelected`，这几个属性作用于tab标题的文字颜色和大小。  
 `isNameResId`：表示标题是否为string中资源id，为false的时候直接取配置的tabName，否则获取对应id的资源文件。默认为true  
 `isTitleVisible`：标题是否可见。默认为true  
